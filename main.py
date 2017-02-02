@@ -10,9 +10,12 @@
 """
 from functools import partial
 from flask import Flask
+from flask_cors import CORS
 import config
 
 app = Flask(__name__, static_url_path='')
+
+CORS(app)
 
 def serve_images(myroute, path):
     """Serve images handler"""

@@ -2,3 +2,4 @@ venv
 *.pyc
 static/files/*
 static/multipleFiles/*
+*.out
